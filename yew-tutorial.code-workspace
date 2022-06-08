@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.inlayHints.enabled": false,
+		"rust-analyzer.linkedProjects": [
+			"./frontend/Cargo.toml"
+		]
+	}
+}
