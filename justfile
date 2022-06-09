@@ -5,4 +5,5 @@ prereqs:
   rustup target add wasm32-unknown-unknown
   
 serve: prereqs
-  trunk serve --open ./frontend/Cargo.toml
+  # Here we leverage trunk's proxy config to allow a CORs request to yew.rs/tutorial/data.json
+  trunk serve --open ./frontend/Cargo.toml --proxy-backend=https://yew.rs/tutorial
